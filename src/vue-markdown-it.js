@@ -68,8 +68,7 @@ export default {
   setup(props) {
     const md = ref();
     const renderMarkdown = () => {
-      let markdown = new MarkdownIt()
-      .use(MarkdownItEmoji, props.emoji)
+      let markdown = new MarkdownIt().use(MarkdownItEmoji, props.emoji)
       .set({
         breaks: props.breaks,
         html: props.html,
