@@ -69,16 +69,16 @@ export default {
     const md = ref();
     const renderMarkdown = () => {
       let markdown = new MarkdownIt()
-        .use(MarkdownItEmoji, props.emoji)
-        .set({
-          breaks: props.breaks,
-          html: props.html,
-          langPrefix: props.langPrefix,
-          linkify: props.linkify,
-          quotes: props.quotes,
-          typographer: props.typographer,
-          xhtmlOut: props.xhtmlOut
-        });
+      .use(MarkdownItEmoji, props.emoji)
+      .set({
+        breaks: props.breaks,
+        html: props.html,
+        langPrefix: props.langPrefix,
+        linkify: props.linkify,
+        quotes: props.quotes,
+        typographer: props.typographer,
+        xhtmlOut: props.xhtmlOut
+      });
 
       props.plugins.forEach(({ plugin, options = {} }) => {
         markdown.use(plugin, options);
