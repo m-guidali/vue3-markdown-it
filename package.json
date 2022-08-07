@@ -16,7 +16,7 @@
     "build": "vue-cli-service build --formats umd-min --target lib ./src/index.js",
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit",
-    "prepublishOnly": "npm run test && npm run build"
+    "prepare": "npm run test && npm run build"
   },
   "dependencies": {
     "markdown-it": "^12.3.2",
