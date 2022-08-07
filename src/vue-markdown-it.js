@@ -68,6 +68,7 @@ export default {
   setup(props) {
     const md = ref();
     const renderMarkdown = () => {
+      // eslint-disable-next-line
       let markdown = new MarkdownIt().use(MarkdownItEmoji, props.emoji)
       .set({
         breaks: props.breaks,
